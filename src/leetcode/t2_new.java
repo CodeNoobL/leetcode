@@ -29,8 +29,5 @@ public class t2_new {
 		} else {
 		}
 		return result;
-
 	}
-
-	
 }
