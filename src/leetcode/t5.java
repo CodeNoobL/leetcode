@@ -45,7 +45,6 @@ public class t5 {
          }
          return result;
     }
-    
     //计算中心回文长度
     public int setCount(List<Character> p,int j ){
     	int count = 0;
