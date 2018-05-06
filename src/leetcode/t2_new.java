@@ -32,22 +32,5 @@ public class t2_new {
 
 	}
 
-	public static void main(String[] args) {
-		t2_new t = new t2_new();
-		ListNode l0 = new ListNode(1);
-		ListNode l2 = new ListNode(9);
-		l2.next = new ListNode(9);
-		/*
-		 * l2.next.next = new ListNode(9); l2.next.next.next = new ListNode(9);
-		 * l2.next.next.next.next = new ListNode(9); l2.next.next.next.next =
-		 * new ListNode(9); l2.next.next.next.next.next = new ListNode(9);
-		 * l2.next.next.next.next.next.next = new ListNode(9);
-		 * l2.next.next.next.next.next.next.next = new ListNode(9);
-		 * l2.next.next.next.next.next.next.next.next = new ListNode(9);
-		 * l2.next.next.next.next.next.next.next.next.next = new ListNode(9);
-		 */
-		ListNode l3 = t.addTwoNumbers(l0, l2);
-		System.out.println(l3.next.val);
-		System.out.println(l3.next.next.val);
-	}
+	
 }
