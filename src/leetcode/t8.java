@@ -53,25 +53,54 @@ package leetcode;
  *
  */
 public class t8 {
-public int myAtoi(String str) {
-        if(str == null){
-        	return 0;
-        }
-        str = str.trim();
-        if(str.equals("")){
-        	return 0;
-        }
-        int result;
-        boolean positive = true;   //正负值
-        if(str.charAt(0) == '-'){
-        	positive = false;
-        }else if(str.charAt(0) == )
-    }
+	public int myAtoi(String str) {
+		if (str == null) {
+			return 0;
+		}
+		str = str.trim();
+		if (str.equals("")) {
+			return 0;
+		}
+		// 首字符处理
+		int result = 0;
+		boolean positive = true; // 正负值
+		if (str.charAt(0) == '-') {
+			positive = false;
+		} else if (str.charAt(0) == '+') {
+			positive = true;
+		} else if ((int) str.charAt(0) > 47 && (int) str.charAt(0) < 58) {
+			result = (int) str.charAt(0)-48;
+		} else {
+			return 0;
+		}
+
+		for (int i = 1; i < str.length(); i++) {
+			if ((int) str.charAt(i) > 47 && (int) str.charAt(i) < 58) {
+				if(Integer.MAX_VALUE/10<result ||Integer.MAX_VALUE/10 == result&&Integer.MAX_VALUE%10 < ( (int) str.charAt(i)-48)){
+					return positive?Integer.MAX_VALUE:Integer.MIN_VALUE;
+				}
+				result = result * 10 + (int) str.charAt(i)-48;
+//				
+			}
+			else{
+				return ifPositive(positive)*result;
+			}
+		}
+		return ifPositive(positive)*result;
+	}
+
+	public int ifPositive (boolean b){
+	  if(b){
+		  return 1;
+	  }
+	  else{
+		  return -1;
+	  }
+   }
+
 	public static void main(String[] args) {
-		String s = null ;
-		//String[] r = s.split(" ");
-		System.out.println(s == null);
-		System.out.println(1);
-		
+		t8 t = new t8();
+		System.out.println(t.myAtoi("-91283472332"));
+
 	}
 }
