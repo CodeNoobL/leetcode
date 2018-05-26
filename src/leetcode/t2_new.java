@@ -1,4 +1,5 @@
 package leetcode;
+
 public class t2_new {
 	public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
 		ListNode result = new ListNode(0);
@@ -25,9 +26,9 @@ public class t2_new {
 			result = new ListNode(i);
 			result.next = add(null, l2.next, result.next, newadd);
 		} else if (add != 0) {
-			result= new ListNode(add);
+			result = new ListNode(add);
 		} else {
 		}
 		return result;
 	}
-}
+} 
