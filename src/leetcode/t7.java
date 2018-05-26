@@ -29,7 +29,7 @@ public class t7 {
 		}
 		int figures = 0;
 		for (int i = 0;; i++) {
-			if (x >= Math.pow(10, i) ) {
+			if (x >= Math.pow(10, i)) {
 				figures++;
 			} else {
 				break;
@@ -45,25 +45,24 @@ public class t7 {
 		int result = 0;
 		for (int i = figures - 1; i >= 0; i--) {
 			long tmpp = (int) (tmp[i] * Math.pow(10, figures - i - 1));
-			if(tmpp +result >(long)Math.pow(2, 31)){
-			    return 0;
-			}else{
-				
-			
-			result += tmpp;
+			if (tmpp + result > (long) Math.pow(2, 31)) {
+				return 0;
+			} else {
+
+				result += tmpp;
 			}
-			}
+		}
 
 		if (positive) {
 			return result;
 		} else {
-            return -result;
+			return -result;
 		}
 	}
-	
-	public static void main(String[] args){
+
+	public static void main(String[] args) {
 		t7 t = new t7();
 		System.out.println(t.reverse(1534236469));
-		System.out.println( (long) (9 * Math.pow(10, 9)));
+		System.out.println((long) (9 * Math.pow(10, 9)));
 	}
 }
