@@ -69,34 +69,33 @@ public class t8 {
 		} else if (str.charAt(0) == '+') {
 			positive = true;
 		} else if ((int) str.charAt(0) > 47 && (int) str.charAt(0) < 58) {
-			result = (int) str.charAt(0)-48;
+			result = (int) str.charAt(0) - 48;
 		} else {
 			return 0;
 		}
 
 		for (int i = 1; i < str.length(); i++) {
 			if ((int) str.charAt(i) > 47 && (int) str.charAt(i) < 58) {
-				if(Integer.MAX_VALUE/10<result ||Integer.MAX_VALUE/10 == result&&Integer.MAX_VALUE%10 < ( (int) str.charAt(i)-48)){
-					return positive?Integer.MAX_VALUE:Integer.MIN_VALUE;
+				if (Integer.MAX_VALUE / 10 < result
+						|| Integer.MAX_VALUE / 10 == result && Integer.MAX_VALUE % 10 < ((int) str.charAt(i) - 48)) {
+					return positive ? Integer.MAX_VALUE : Integer.MIN_VALUE;
 				}
-				result = result * 10 + (int) str.charAt(i)-48;
-//				
-			}
-			else{
-				return ifPositive(positive)*result;
+				result = result * 10 + (int) str.charAt(i) - 48;
+				//
+			} else {
+				return ifPositive(positive) * result;
 			}
 		}
-		return ifPositive(positive)*result;
+		return ifPositive(positive) * result;
 	}
 
-	public int ifPositive (boolean b){
-	  if(b){
-		  return 1;
-	  }
-	  else{
-		  return -1;
-	  }
-   }
+	public int ifPositive(boolean b) {
+		if (b) {
+			return 1;
+		} else {
+			return -1;
+		}
+	}
 
 	public static void main(String[] args) {
 		t8 t = new t8();
