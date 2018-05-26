@@ -30,9 +30,9 @@ import java.util.Scanner;
 
 public class t6 {
 	public String convert(String s, int numRows) {
-		if(numRows <2){
+		if (numRows < 2) {
 			return s;
-			}
+		}
 		String result = "";
 		for (int i = 0; i < numRows && i < s.length(); i++) {
 			if (i == 0) {
@@ -55,7 +55,6 @@ public class t6 {
 		return result;
 	}
 
-	
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 		String s = in.nextLine();
