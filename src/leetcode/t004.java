@@ -16,7 +16,7 @@ nums2 = [3, 4]
 
 中位数是 (2 + 3)/2 = 2.5
  */
-public class t4 {
+public class t004 {
 	public double findMedianSortedArrays(int[] nums1, int[] nums2) {
 		int[] result = new int[nums1.length + nums2.length];
 		int i = 0;

@@ -17,7 +17,7 @@ package leetcode;
 输出: false
 解释: 从右向左读, 为 01 。因此它不是一个回文数。
  */
-public class t9 {
+public class t009 {
 	 public boolean isPalindrome(int x) {
 		 if(x<0){
 			 return false;

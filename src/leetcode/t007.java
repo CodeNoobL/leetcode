@@ -16,7 +16,7 @@ package leetcode;
 输入: 120
 输出: 21
  */
-public class t7 {
+public class t007 {
 	public int reverse(int x) {
 		boolean positive;
 		if (x > 0) {
@@ -61,7 +61,7 @@ public class t7 {
 	}
 
 	public static void main(String[] args) {
-		t7 t = new t7();
+		t007 t = new t007();
 		System.out.println(t.reverse(1534236469));
 		System.out.println((long) (9 * Math.pow(10, 9)));
 	}

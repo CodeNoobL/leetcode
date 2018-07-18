@@ -19,7 +19,7 @@ class ListNode {
 	}
 }
 
-public class t2 {
+public class t002 {
 	public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
 		ListNode result;
 		long a, b;
@@ -56,7 +56,7 @@ public class t2 {
 	}
 
 	public static void main(String[] args) {
-		t2 t = new t2();
+		t002 t = new t002();
 		ListNode l0 = new ListNode(9);
 		ListNode l2 = new ListNode(1);
 		l2.next = new ListNode(9);

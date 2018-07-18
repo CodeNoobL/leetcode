@@ -10,7 +10,7 @@ package leetcode;
 
 给定 "pwwkew" ，最长子串是 "wke" ，长度是3。请注意答案必须是一个子串，"pwke" 是 子序列  而不是子串。
  */
-public class t3 {
+public class t003 {
 	public int lengthOfLongestSubstring(String s) {
 		int max = 0;
 
@@ -20,7 +20,7 @@ public class t3 {
 			int result = 1;
 			for (int j = i + 1; lzq && j < s.length(); j++) {
 				char t = s.charAt(j);
-				if (t3.charequal(x, t)) {
+				if (t003.charequal(x, t)) {
 					x = "";
 					lzq = false;
 				} else {

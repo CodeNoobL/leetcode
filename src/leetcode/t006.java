@@ -28,7 +28,7 @@ n-1 i+k(n+n-2)
 
 import java.util.Scanner;
 
-public class t6 {
+public class t006 {
 	public String convert(String s, int numRows) {
 		if (numRows < 2) {
 			return s;
@@ -59,7 +59,7 @@ public class t6 {
 		Scanner in = new Scanner(System.in);
 		String s = in.nextLine();
 		int i = in.nextInt();
-		t6 t = new t6();
+		t006 t = new t006();
 		String result = t.convert(s, i);
 		System.out.println(result);
 	}

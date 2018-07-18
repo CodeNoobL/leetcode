@@ -1,6 +1,6 @@
 package leetcode;
 
-public class t2_new {
+public class t002_new {
 	public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
 		ListNode result = new ListNode(0);
 		result = add(l1, l2, result, 0);

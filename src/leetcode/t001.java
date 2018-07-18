@@ -8,7 +8,7 @@ package leetcode;
 因为 nums[0] + nums[1] = 2 + 7 = 9
 所以返回 [0, 1]
  */
-public class t1 {
+public class t001 {
 	public int[] twoSum(int[] nums, int target) {
 		int[] result = new int[2];
 		for (int i = 0; i < nums.length; i++) {

@@ -52,7 +52,7 @@ package leetcode;
  *匹配第一个为+、-、数字的字符
  *
  */
-public class t8 {
+public class t008 {
 	public int myAtoi(String str) {
 		if (str == null) {
 			return 0;
@@ -98,7 +98,7 @@ public class t8 {
 	}
 
 	public static void main(String[] args) {
-		t8 t = new t8();
+		t008 t = new t008();
 		System.out.println(t.myAtoi("-91283472332"));
 
 	}

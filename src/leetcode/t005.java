@@ -17,7 +17,7 @@ import java.util.Scanner;
 ÊäÈë: "cbbd"
 Êä³ö: "bb"
  */
-public class t5 {
+public class t005 {
 	public String longestPalindrome(String s) {
 		List<Character> p = new ArrayList<Character>();
 		for (int i = 0; i < s.length(); i++) {
@@ -62,7 +62,7 @@ public class t5 {
 	public static void main(String args[]) {
 		Scanner in = new Scanner(System.in);
 		String s = in.nextLine();
-		t5 t = new t5();
+		t005 t = new t005();
 		String result = t.longestPalindrome(s);
 		System.out.println(result);
 	}
